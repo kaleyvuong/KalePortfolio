@@ -239,14 +239,14 @@ strong, .list ul, h1, .list ul li {
     border: solid 2px rgb(56, 67, 67);
     border-radius: 50px;
     padding: 4%; 
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
     background-color: rgb(190, 199, 207);
 }
 
 svg {
     border-radius: 25px;
-    height: 60vh;
+    height: 70vh;
 }
 
 .carousel-item {
@@ -262,7 +262,8 @@ rect {
 }
 
 .carousel-caption img {
-    min-width: 400px;
+    min-width: 500px;
+    min-height: 650px;
     border-radius: 25px;
     margin-bottom: 50px;
     object-fit: cover;
