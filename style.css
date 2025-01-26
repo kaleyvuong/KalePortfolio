@@ -179,6 +179,7 @@ hr {
     height: 5px;
     background-color:rgb(56, 67, 67);
     border: none;
+    margin: 0;
 }
 
 .skills strong{
@@ -223,30 +224,30 @@ strong, .list ul, h1, .list ul li {
 }
 
 /* Projects */
+
 .carousel {
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-bottom: 10%;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-bottom: 10%;
 }
 
 .carousel .p {
     font-size: 10rem;
-    margin-bottom: 8%;
-    margin-top: 10%;
+    margin-bottom: 5%;
+    padding-top: 10%;
     color: rgb(19, 26, 26);
 }
 .project {
-    border: solid 2px rgb(56, 67, 67);
+    border: solid 1px rgb(56, 67, 67);
     border-radius: 50px;
     padding: 4%; 
     margin-left: 10%;
     margin-right: 10%;
-    background-color: rgb(190, 199, 207);
 }
 
 svg {
     border-radius: 25px;
-    height: 70vh;
+    height: 60vh;
 }
 
 .carousel-item {
@@ -254,7 +255,7 @@ svg {
 }
 
 rect {
-    fill:  rgb(190, 199, 207);
+    fill: aliceblue;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -262,16 +263,29 @@ rect {
 }
 
 .carousel-caption img {
-    min-width: 500px;
-    min-height: 650px;
+    min-width: 350px;
+    min-height: 500px;
     border-radius: 25px;
     margin-bottom: 50px;
     object-fit: cover;
     box-shadow: 0 20px 10px 0 rgba(0, 0, 0, 0.5);
+    vertical-align: middle;
 }
 
 .carousel-caption, .carousel-control-prev {
     color: rgb(19, 26, 26);
+}
+
+.carousel-control-next-icon {
+    background-image: url(images/nextarrow.png);
+    height:4vh;
+    scale: 0.75; 
+}
+
+.carousel-control-prev-icon {
+    background-image: url(images/prevarrow.png);
+    height:4vh;
+    scale: 0.75; 
 }
 
 /* Socials */
