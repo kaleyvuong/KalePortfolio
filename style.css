@@ -6,14 +6,11 @@ body {
     overflow-x: hidden;
     background-color: aliceblue;
 }
-.header {
-    background-image: linear-gradient(to top, rgb(19, 26, 26) 0, transparent 50%), url(images/IMG_7512.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 95rem;
-}
 
-/* Navigation */
+/* Head */
+.head {
+    height: 100vh;
+}
 .nav {
     padding: 0.75rem;
     margin-top: 10px;
@@ -42,6 +39,17 @@ body {
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
+.header img{
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    object-fit: cover;
+    object-position: 0% 5%;
+}
+
 /* title */
 .title {
     font-family: "Bona Nova SC", serif;
@@ -57,15 +65,13 @@ body {
 .title.show {
     transform: translateY(0);
   }
-  
 
 /* About Me */
 .aboutme {
-    background-color: aliceblue;
+    background-color:aliceblue;
     display: flex;
     flex-direction: column;
     font-family: "Bona Nova SC", serif;
-    /* background-image: linear-gradient(to bottom, rgb(19, 26, 26) 0, transparent 20%); */
 }   
 
 .container-fluid {
@@ -88,10 +94,14 @@ body {
     object-fit: cover;
     border-radius: 1000px;
     transition-delay: 400ms;
+    border: 6px  solid rgb(19, 26, 26);
 }
 
 .me .metext {
     font-family: "Kantumruy Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
     margin-left: 5%;
     margin-right: 15%;
     font-size: 2.5rem;
@@ -99,8 +109,8 @@ body {
     transition-delay: 500ms;
     text-align: left;
     color: rgb(19, 26, 26);
-    font-weight: 100;
 }
+
 
 .container-fluid, .meimg, .metext {
     visibility: hidden;
@@ -116,6 +126,10 @@ body {
 }
 
 /* About me : boxes */
+.box {
+    padding-top: 5%;
+    /* background-color: rgb(91, 112, 112) */
+}
 .boxes {
     background-color: #e5edf3;
     width: 100rem;
@@ -173,7 +187,6 @@ body {
 
 /* About Me : Skills */
 .skills {
-    margin-top: 1%;
     text-align: center;
     color: rgb(19, 26, 26);
 }
