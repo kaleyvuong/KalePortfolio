@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -46,18 +46,17 @@
 
     <div class="banner">
         <div class="anim">
-            <div class="hoverbox"></div>
             <div class="slider" style="--quantity: 10">
-                <div class="item" style="--position: 1"><img src="images/dragon_1.jpg" alt=""></div>
-                <div class="item" style="--position: 2"><img src="images/dragon_2.jpg" alt=""></div>
-                <div class="item" style="--position: 3"><img src="images/dragon_3.jpg" alt=""></div>
-                <div class="item" style="--position: 4"><img src="images/dragon_4.jpg" alt=""></div>
-                <div class="item" style="--position: 5"><img src="images/dragon_5.jpg" alt=""></div>
-                <div class="item" style="--position: 6"><img src="images/dragon_6.jpg" alt=""></div>
-                <div class="item" style="--position: 7"><img src="images/dragon_7.jpg" alt=""></div>
-                <div class="item" style="--position: 8"><img src="images/dragon_8.jpg" alt=""></div>
-                <div class="item" style="--position: 9"><img src="images/dragon_9.jpg" alt=""></div>
-                <div class="item" style="--position: 10"><img src="images/dragon_10.jpg" alt=""></div>
+                <div class="item" style="--position: 1"><img src="images/800px-Los_Angeles_City_Hall_2013.jpg" alt=""></div>
+                <div class="item" style="--position: 2"><img src="images/Coming-soon-Cal-Poly-Pomona.jpg" alt=""></div>
+                <div class="item" style="--position: 3"><img src="images/facebook.png" alt=""></div>
+                <div class="item" style="--position: 4"><img src="images/gmail.png" alt=""></div>
+                <div class="item" style="--position: 5"><img src="images/fun in the sun.jpg" alt=""></div>
+                <div class="item" style="--position: 6"><img src="images/pie dev logo.png" alt=""></div>
+                <div class="item" style="--position: 7"><img src="images/linkedin.webp" alt=""></div>
+                <div class="item" style="--position: 8"><img src="images/IMG_7512.jpg" alt=""></div>
+                <div class="item" style="--position: 9"><img src="images/IMG_0813.jpeg" alt=""></div>
+                <div class="item" style="--position: 10"><img src="images/Instagram_icon.png" alt=""></div>
             </div>
         </div>
         <div class="content">
@@ -74,6 +73,54 @@
             <div class="model"></div>
         </div>
     </div>
+    
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <main>
+        <div id="popup" class="popup">
+        </div>
+        <div class="slider" reverse="true" style="
+            --width: 400px;
+            --height: 600px;
+            --quantity: 10;
+        ">
+            <div class="list">
+                <div class="item" style="--position: 1" onclick="myFunction()"><img src="images/800px-Los_Angeles_City_Hall_2013.jpg" alt=""></div>
+                <div class="item" style="--position: 2" onclick="myFunction()"><img src="images/Coming-soon-Cal-Poly-Pomona.jpg" alt=""></div>
+                <div class="item" style="--position: 3" onclick="myFunction()"><img src="images/facebook.png" alt=""></div>
+                <div class="item" style="--position: 4" onclick="myFunction()"><img src="images/gmail.png" alt=""></div>
+                <div class="item" style="--position: 5" onclick="myFunction()"><img src="images/fun in the sun.jpg" alt=""></div>
+                <div class="item" style="--position: 6" onclick="myFunction()"><img src="images/pie dev logo.png" alt=""></div>
+                <div class="item" style="--position: 7" onclick="myFunction()"><img src="images/linkedin.webp" alt=""></div>
+                <div class="item" style="--position: 8" onclick="myFunction()"><img src="images/IMG_7512.jpg" alt=""></div>
+                <div class="item" style="--position: 9" onclick="myFunction()"><img src="images/IMG_0813.jpeg" alt=""></div>
+                <div class="item" style="--position: 10" onclick="myFunction()"><img src="images/Instagram_icon.png" alt=""></div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("popup");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+            }
+    </script>
     
 </body>
 </html>
